@@ -1,0 +1,95 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Секция с целями */
+.goals {
+    margin-top: 20px;
+}
+
+.goal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.goal.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.goal button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.goal .complete-btn {
+    background-color: #4caf50; /* Зелёный для выполнения */
+}
+
+.goal .complete-btn:hover {
+    background-color: #45a049;
+}
+
+.goal .delete-btn {
+    background-color: #f44336; /* Красный для удаления */
+}
+
+.goal .delete-btn:hover {
+    background-color: #e53935;
+}
+
+.goal.completed .complete-btn {
+    background-color: gray; /* Серый для выполненной цели */
+    cursor: not-allowed;
+}
